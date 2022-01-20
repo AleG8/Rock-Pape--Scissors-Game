@@ -99,6 +99,7 @@ main > #score-board{
     display: flex;
     justify-content: space-between;
     width: 20rem;
+    user-select: none;
 }
 
 #choices > .choice{

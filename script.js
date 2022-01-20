@@ -69,14 +69,10 @@ function game(userChoise, computerChoise){
     },1000);
 };
 
-const randomComputerChoises = () =>{
-   return [computerChoise, computerValiable] = getComputerChoise();
-};
-
 [rockChoise, paperChoise, scissorsChoise].forEach(choise =>{
     choise.addEventListener("click", (e)=>{
         //Create random valiables
-        randomComputerChoises();
+        [computerChoise, computerValiable] = getComputerChoise();
         //
         switch(e.currentTarget){
             case rockChoise:
